@@ -1,4 +1,42 @@
-root: {
+/* set body style */
+body {
+  background-color: #4c4c4c;
+  color: #e766ec;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* set header style */
+header {
+  text-align: center;
+}
+
+/* set address style */
+address {
+  font-weight: bolder;
+}
+
+header > p {
+  align-self: center;
+  color: white;
+}
+
+/* Create section boxes */
+section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border-style: dashed;
+  border-color: white;
+  margin: 10px;
+  max-width: 30%;
+}
+
+/* Add media query */
+@media screen and (max-width: 992px) {
+  section {
+    background: #772014;
+  }
 }
 
 /*Add flexbox row*/
@@ -21,12 +59,21 @@ root: {
   grid-template-columns: repeat(12, 1fr);
 }
 
-/* add gradients */
-.linear-gradient-background {
+/* Linear Gradients card code
+background-image: linear-gradient(
+    rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 102, 236, 0.6) 100%
+  );*/
+
+/* set code-card style */
+
+.code-card {
+  color: white;
   background-image: linear-gradient(
     rgba(232, 102, 236, 0.3) 0%,
     rgba(232, 102, 236, 0.6) 100%
   );
+  padding: 10px;
 }
 
 /* add box transition glow */
@@ -45,4 +92,8 @@ root: {
 .card-header {
   position: relative;
   margin-top: -20px;
+  /* Added code */
+  border-radius: 10px;
+  border-color: white;
+  border-style: solid;
 }
