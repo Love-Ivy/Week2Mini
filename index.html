@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Week2Mini</title>
+    <title>CSS Cheatsheet</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
@@ -12,15 +12,17 @@
       <h1>CSS Snippet Cheatsheet</h1>
       <p>
         Ever have trouble recalling the exact syntax for your favorite CSS code?
-        Give it a permanent home and add it to this page! Select any snippet
+        Give it a permanent home and add it to this page! </br> Select any snippet
         below and it'll automatically select all of the code for you to copy.
       </p>
     </header>
 
-    <main>
+    <main class="grid">
       <section>
         <h2 class="card-header">Flexbox Row</h2>
-        <p>Use these three properties to creat a Flexbox row layout.</p>
+        <p class="code-desc">
+          Use these three properties to creat a Flexbox row layout.
+        </p>
         <!-- CSS code inserted to be visible on page -->
         <pre class="code-card">
 .row {
@@ -32,7 +34,7 @@
       </section>
       <section>
         <h2 class="card-header">Flexbox Column</h2>
-        <p>Use this to creat a Flexbox column layout.</p>
+        <p class="code-desc">Use this to creat a Flexbox column layout.</p>
         <!-- CSS code inserted to be visible on page -->
         <pre class="code-card">
 .column {
@@ -43,7 +45,7 @@
       </section>
       <section>
         <h2 class="card-header">CSS Grid Layout</h2>
-        <p>Build a 12-column layout using CSS Grid</p>
+        <p class="code-desc">Build a 12-column layout using CSS Grid</p>
         <!-- CSS code inserted to be visible on page -->
         <pre class="code-card">
 .grid {
@@ -55,7 +57,9 @@
       </section>
       <section>
         <h2 class="card-header">Linear Gradients</h2>
-        <p>This will creat a background linear gradient from top to bottom.</p>
+        <p class="code-desc">
+          This will creat a background linear gradient from top to bottom.
+        </p>
         <!-- CSS code inserted to be visible on page -->
         <pre class="code-card">
 .linear-gradient-background {
@@ -68,7 +72,7 @@
       </section>
       <section>
         <h2 class="card-header">Box Transition Glow</h2>
-        <p>Use transition and box shadows to glow on hover</p>
+        <p class="code-desc">Use transition and box shadows to glow on hover</p>
         <!-- CSS code inserted to be visible on page -->
         <pre class="code-card">
 .code-card .card-header {
@@ -85,12 +89,12 @@
       </section>
       <section>
         <h2 class="card-header">Overlay Card with Title</h2>
-        <p>
+        <p class="code-desc">
           Use position properties and negative margins to raise elements higher
           than their natural starting point.
         </p>
         <!-- CSS code inserted to be visible on page -->
-        <pre class="linear-gradient-background, code-card">
+        <pre class="code-card">
 .card-header {
   position: relative;
   margin-top: -20px;

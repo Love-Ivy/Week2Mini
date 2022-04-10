@@ -11,89 +11,94 @@ header {
   text-align: center;
 }
 
-/* set address style */
-address {
-  font-weight: bolder;
-}
-
 header > p {
-  align-self: center;
   color: white;
+  font-size: larger;
+  padding: 15px;
 }
 
 /* Create section boxes */
 section {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  display:flex;
+  flex-direction: column;
   border-style: dashed;
   border-color: white;
-  margin: 10px;
-  max-width: 30%;
+  margin: 1vw;
+  width: 30%;
+  min-height: 30vh;
+  float: left;
 }
 
 /* Add media query */
 @media screen and (max-width: 992px) {
   section {
-    background: #772014;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  section {
+    width: 100%;
   }
 }
 
-/*Add flexbox row*/
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.code-desc {
+    display: block;
+  font-size: larger;
+  text-align: left;
+  margin: 5px
 }
-
-/* Add flexbox Column */
-.column {
-  display: flex;
-  flex-direction: column;
-}
-
-/* add background colors and text colors */
-.grid {
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(12, 1fr);
-}
-
-/* Linear Gradients card code
-background-image: linear-gradient(
-    rgba(232, 102, 236, 0.3) 0%,
-    rgba(232, 102, 236, 0.6) 100%
-  );*/
-
-/* set code-card style */
 
 .code-card {
+  display: flex;
   color: white;
+  flex: 1;
+  align-items: center;
   background-image: linear-gradient(
     rgba(232, 102, 236, 0.3) 0%,
     rgba(232, 102, 236, 0.6) 100%
   );
-  padding: 10px;
-}
-
-/* add box transition glow */
-.code-card .card-header {
   border-radius: 8px;
-  transition: all 0.5s ease-in-out;
+  padding: 10px;
+  text-align: left;
+  margin: 10px;
+  font-size: larger;
 }
 
-.code-card:hover,
-.code-card:hover .card-header {
-  box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1),
-    0 0 15px rgba(232, 102, 236, 1);
-}
-
-/* overlay card with title */
-.card-header {
+/* overlay card with title*/
+.card-header { 
   position: relative;
   margin-top: -20px;
   /* Added code */
-  border-radius: 10px;
+  background-color: #4c4c4c;
   border-color: white;
   border-style: solid;
+  border-radius: 8px;
+  padding: 5px;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: left;
+}
+
+  /* add box transition glow */
+.code-card .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  /.code-card:hover,
+  .code-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1),
+      0 0 15px rgba(232, 102, 236, 1);
+  }
+
+/* set address style */
+address {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 15px;
+  margin: auto;  
+  font-weight: bolder;
+  text-align: center;
+}
 }
