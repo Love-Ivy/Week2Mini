@@ -19,7 +19,7 @@ header > p {
 
 /* Create section boxes */
 section {
-  display:flex;
+  display: flex;
   flex-direction: column;
   border-style: dashed;
   border-color: white;
@@ -42,10 +42,10 @@ section {
 }
 
 .code-desc {
-    display: block;
+  display: block;
   font-size: larger;
   text-align: left;
-  margin: 5px
+  margin: 5px;
 }
 
 .code-card {
@@ -65,7 +65,7 @@ section {
 }
 
 /* overlay card with title*/
-.card-header { 
+.card-header {
   position: relative;
   margin-top: -20px;
   /* Added code */
@@ -79,17 +79,17 @@ section {
   text-align: left;
 }
 
-  /* add box transition glow */
+/* add box transition glow */
 .code-card .card-header {
-    border-radius: 8px;
-    transition: all 0.5s ease-in-out;
-  }
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
 
-  /.code-card:hover,
-  .code-card:hover .card-header {
-    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1),
-      0 0 15px rgba(232, 102, 236, 1);
-  }
+.code-card:hover,
+.code-card:hover .card-header {
+  box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1),
+    0 0 15px rgba(232, 102, 236, 1);
+}
 
 /* set address style */
 address {
@@ -97,8 +97,7 @@ address {
   right: 0;
   left: 0;
   bottom: 15px;
-  margin: auto;  
+  margin: auto;
   font-weight: bolder;
   text-align: center;
-}
 }
